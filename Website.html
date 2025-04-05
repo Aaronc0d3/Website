@@ -2,8 +2,14 @@
 <html lang="en-US"> <!-- make search engines recgonize this website in US english -->
 
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Making sure the search engine gets my images right-->
+
         <link rel="stylesheet" href="homepage.css">
         <!-- link to my css page-->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Link to Font Awesome for my github and linkedin logo-->
   
         <title>
             Jarif Zaman website Portfolio
@@ -11,7 +17,8 @@
 
     </head>
         <body>
-            <h1 style="color:mediumseagreen"><strong>
+            <h1 style="color:mediumseagreen">
+                <strong>
                 Hi! I'm Jarif Zaman
                 </strong> 
             </h1> <!-- self introduction with strong -->
@@ -20,9 +27,10 @@
              alt="Me in the woods" width="200" height="200"> 
              <!-- picture of me in George Pierce Park that is center andchanged in pixel height and width-->
 
-            <h2 style="font-size: 200%; color:mediumseagreen;"><em>
+            <h2 style="font-size: 200%; color:mediumseagreen;">
+                <em>
                 About me
-            </em> 
+                </em> 
             </h2><!-- title for my self description, with font-size changed and centered, color seagreen-->
 
             <p style="font-size: 160%;"> 
@@ -38,12 +46,20 @@
                 Links to my LinkedIn and Github
             </p><!-- informing people of my github and linkedin; altered  font size and text centered solid black border-->
 
-            <a href="https://www.linkedin.com/in/jarif-zaman/" title="Linkedin"> 
-                <img src="Images/Linkedin.png" width="50" height="50">    
-            </a>
-            <a href="https://github.com/Aaronc0d3" title="Github">
-                <img src="Images/githublogo.png" width="50" height="50">
-            </a> <!-- above images are for linkedin and github with links attached to them; altered image size-->
+            <div class="row">
+                <div class="column">
+                    <a href="https://www.linkedin.com/in/jarif-zaman/" title="Linkedin" class="social-icon"> 
+                        <i class="fa-brands fa-linkedin linkedin-icon"></i>
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="https://github.com/Aaronc0d3" title="Github" class="social-icon">
+                        <i class="fa-brands fa-github github-icon"></i>
+                    </a>
+                </div>
+            </div>
+            
+            
 
             <a href="mailto:zaman.jarif1@gmail.com">
 

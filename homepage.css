@@ -3,6 +3,22 @@ body {
     text-align: center;
 } /* changes the entire font family of the website and centers it */
 
+* {
+    box-sizing: border-box;
+} /* letting the browser know that I want my images in a certain width and height*/
+
+.row {
+    display: flex;
+    justify-content: center; /* Centers the columns in the row */
+    gap: 0; /* Ensures no gap between columns */
+} /* making my images (particularly the linkedin and github link) display in a certain way*/
+
+
+.column{
+    width: auto; /* Let the content determine width */
+    padding: 1px;
+} /*side by side information for the github and linkedin images */
+
 img {
     display: block;
     margin-left: auto;
@@ -13,10 +29,28 @@ h1 {
     font-size: 300%;
 } /*centering and enlarging text*/
 
+.fa-linkedin {
+    font-size: 50px;
+    color: #0077b5; 
+    transition: color 0.4s ease-in-out;
+} /* linkedin icon form font awesome that transits whever being hovered over */
+
+.fa-github {
+    font-size: 50px;
+    color: #24292e; 
+    transition: color 0.4s ease-in-out;
+} /*github icon from font awesome that also transits whenever being hovered over*/
+
+
+.social-icon:hover .fa-linkedin,
+.social-icon:hover .fa-github {
+    color: #3cb371; 
+} /* transition process of the icons into mediumseagreen */
+
 .button{
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 2px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
