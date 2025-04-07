@@ -11,12 +11,12 @@ body {
     display: flex;
     justify-content: center; /* Centers the columns in the row */
     gap: 0; /* Ensures no gap between columns */
-} /* making my images (particularly the linkedin and github link) display in a certain way*/
+} /* making my images (particularly the images on my link) display in a certain way*/
 
 
 .column{
     width: auto; /* Let the content determine width */
-    padding: 1px;
+    padding: 3px;
 } /*side by side information for the github and linkedin images */
 
 img {
@@ -41,33 +41,15 @@ h1 {
     transition: color 0.4s ease-in-out;
 } /*github icon from font awesome that also transits whenever being hovered over*/
 
+.fa-envelope {
+    font-size: 50px;
+    color: #b03f03;
+    transition: 0.4s ease-in-out;
+} /*email icon from font awesome that also transits whenever being hoevered over*/
 
 .social-icon:hover .fa-linkedin,
-.social-icon:hover .fa-github {
+.social-icon:hover .fa-github,
+.social-icon:hover .fa-envelope
+ {
     color: #3cb371; 
 } /* transition process of the icons into mediumseagreen */
-
-.button{
-    border: none;
-    color: white;
-    padding: 2px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-} /* this is setting up the length, height, and other information regarding the contact me link */
-
-.button1 {
-    background-color: white;
-    color: black;
-    border: 4px solid black;
-} /*makes the contact me button standard black and white */
- 
-.button1:hover {
-    background-color:white;
-    color: mediumseagreen;
-    border: 4px solid mediumseagreen;
-} /*makes it whenever the user hovers over the contact me button it turns green
