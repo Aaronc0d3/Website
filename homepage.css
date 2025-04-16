@@ -53,3 +53,8 @@ h1 {
  {
     color: #3cb371; 
 } /* transition process of the icons into mediumseagreen */
+
+section {
+    background-color: aqua;
+    width: 100%;
+}
